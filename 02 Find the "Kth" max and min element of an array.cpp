@@ -39,7 +39,16 @@ class Solution{
                 }
             }
         }    
-        
+        /*
+        space optimised
+        priority_queue<int> maxH;
+           for(int i=0;i<=r;i++)
+           {
+               maxH.push(arr[i]);
+               if(maxH.size()>k) maxH.pop();
+           }
+           return maxH.top();
+        */
         return ans;
         
     }
